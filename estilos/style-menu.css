@@ -1,0 +1,304 @@
+.container-menu {
+    display: flex;
+    background-color: var(--Cor-Fundo);
+    justify-content: center;
+    align-items: center;
+    height: 108px;
+    position: relative;
+}
+.menu {
+    display: flex;
+}
+.ul-menu {
+    display: flex;
+    gap: 163px;
+    font-family: var(--font-Menu);
+    font-size: 20px;
+    color: var(--Cor-Texto);
+    list-style: none;
+}
+li {
+    display: flex;
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+    color: var(--Cor-Texto);
+}
+.icon-sacola{
+    position: absolute;
+    right: 35px;
+    top: 30px;
+    height: 48px;
+    width: 48px;
+    cursor: pointer;
+}
+.pagina-principal {
+    background-image: url(../imagens/fundo-techhub1.png);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;  
+    text-align: center;
+}
+.container-section {
+    color: var(--Cor-Texto);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+}
+.titulo {
+    font-size: 80px;
+    font-family: var(--font-Principal);
+    color: var(--Cor-Texto);
+    text-align: center;
+}
+.sub-titulo {
+    font-size: 40px;
+    font-family: var(--font-Principal);
+    color: var(--Cor-Texto);
+    text-align: center;
+    margin-top: 30px;
+}
+.terceiro-titulo {
+    font-family: var(--font-Principal);
+    color: var(--Cor-Texto);
+    font-size: 30px;
+    margin-top: 30px;
+}
+.btn-pagina-principal {
+    height: 67px;
+    width: 272px;
+    margin-top: 76px;
+    font-family: var(--font-Principal);
+    font-size: 25px;
+    border-radius: 20px;
+    color: var(--Cor-Texto);
+    background-color: var(--Cor-Botao);
+    border: 2px solid var(--Cor-Bordas);
+    cursor: pointer;
+    box-shadow: 0 0 5px var(--Cor-Bordas), 0 0 10px var(--Cor-Bordas), 0 0 20px var(--Cor-Bordas);
+}
+.btn-pagina-principal:hover {
+    background-color: #00f0ff;
+    color: black;
+    font-family: var(--font-Principal);
+    box-shadow: 0 0 10px var(--Cor-Bordas), 0 0 20px var(--Cor-Bordas), 0 0 40px var(--Cor-Bordas);
+}
+.escolher-tech {
+    background-color: var(--Cor-Fundo);
+}
+.titulo-escolher-tech {
+     font-family: var(--font-Principal);
+     color: var(--Cor-Texto);
+     font-size: 50px;
+     text-align: center;
+     padding: 20px 0 20px 0;
+     display: flex;
+     justify-content: center;
+     align-content: center;
+}
+.container-cards-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px; 
+    flex-wrap: wrap;
+}
+.container-cards {
+    width: 226px;
+    height: 197px;
+    background-color: var(--Cor-Texto);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--Cor-Fundo);
+    font-size: 18px;
+    margin-top: 50px;
+}
+.titulo-produtos-destaque {
+    font-family: var(--font-Principal);
+    color: var(--Cor-Texto);
+    font-size:50px;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    display: flex;
+    margin: 70px 0 70px 0;
+    justify-content: center;
+    align-content: center;
+}
+.container-produtos-grid {
+    display: flex;
+    width: 60%;
+    height: 561px;
+    background-color: var(--Cor-Texto);
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin: 0 auto;
+    gap: 86px;
+}
+.container-produtos {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    height: 472px;
+    background-color: var(--Cor-Fundo);
+    align-items: center;
+    text-align: center;
+    padding: 23px 45px 0 46px;
+    border-radius: 20px;
+}
+.container-produtos:hover {
+    width: 300px;
+    height: 500px;
+}
+.img-produtos {
+    width: 174px;
+    height: 173px;
+    border-radius: 20px;
+}
+.p-produtos {
+    font-family: var(--font-Principal);
+    color: var(--Cor-Texto);
+    font-size: 18px;
+    padding: 20px 0 0 0;
+    font-weight: 100;
+}
+.preco-produtos {
+    font-family: var(--font-Principal);
+    color: var(--Cor-Texto);
+    font-size: 18px;
+    padding: 12px 0 0 0;
+}
+.btn-produtos {
+    height: 48px;
+    width: 211px;
+    margin: 44px 0 0 0;
+    font-family: var(--font-Principal);
+    font-size: 18px;
+    border-radius: 20px;
+    color: var(--Cor-Texto);
+    background-color: var(--Cor-Botao);
+    border: 2px solid var(--Cor-Bordas);
+    cursor: pointer;
+    box-shadow: 0 0 5px var(--Cor-Bordas), 0 0 10px var(--Cor-Bordas), 0 0 20px var(--Cor-Bordas);
+}
+.btn-produtos:hover {
+    background-color: #00f0ff;
+    color: black;
+    font-family: var(--font-Principal);
+    box-shadow: 0 0 10px var(--Cor-Bordas), 0 0 20px var(--Cor-Bordas), 0 0 40px var(--Cor-Bordas);
+}
+.email {
+    height: 783px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.icon-email {
+    display: flex;
+    margin: 50px 0 0 0;
+}
+.h2-email {
+    font-family: var(--font-Principal);
+    font-size: 50px;
+    color: var(--Cor-Texto);
+    text-shadow: -1px -1px 0 #00BFFF, 
+    1px -1px 0 #00BFFF, 
+   -1px  1px 0 #00BFFF, 
+    1px  1px 0 #00BFFF,
+    2px  2px 4px var(--Cor-Bordas);
+    letter-spacing: 2px;   
+}
+.p-email {
+    font-family: var(--font-Principal);
+    font-size: 30px;
+    color: var(--Cor-Texto);
+    margin: 27px 0 0 0;
+}
+.input-email {
+    width: 638px;
+    height: 50px;
+    border-radius: 20px;
+    border: 2px solid var(--Cor-Bordas);
+    box-shadow: 0 0 10px var(--Cor-Bordas);
+    padding: 24px;
+    margin: 53px 0 0 0;
+}
+input::placeholder {
+    color: black; 
+    font-size: 16px;
+    font-style: var(--font-Principal);
+    opacity: 1; 
+}
+.btn-email {
+    height: 67px;
+    width: 272px;
+    margin-top: 76px;
+    font-family: var(--font-Principal);
+    font-size: 25px;
+    border-radius: 20px;
+    color: var(--Cor-Texto);
+    background-color: var(--Cor-Botao);
+    border: 2px solid var(--Cor-Bordas);
+    cursor: pointer;
+    box-shadow: 0 0 5px var(--Cor-Bordas), 0 0 10px var(--Cor-Bordas), 0 0 20px var(--Cor-Bordas);
+}
+.btn-email:hover {
+    background-color: #00f0ff;
+    color: black;
+    font-family: var(--font-Principal);
+    box-shadow: 0 0 10px var(--Cor-Bordas), 0 0 20px var(--Cor-Bordas), 0 0 40px var(--Cor-Bordas);
+}
+footer {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    font-family: var(--font-Principal);
+}
+.footer-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.footer-colunas {
+    flex: 1 1 20%;
+    min-width: 200px;
+    margin: 10px;
+    text-align: left;
+    color: var(--Cor-Texto);
+}
+.footer-colunas > h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+.footer-colunas > p > i {
+    font-size: 1.4em;
+}
+.footer-colunas > p {
+    font-size: 0.9em;
+    line-height: 1.5em;
+}
+.icon-contatos {
+    height: 22px;
+    width: 22px;
+    cursor: pointer;
+}
+
+/* Footer Copy */
+#footer_copyright {
+    border-top: 1px solid blue;
+    padding-top: 10px;
+    font-size: 0.9em;
+    color: var(--Cor-Texto);
+} 
