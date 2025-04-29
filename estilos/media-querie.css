@@ -1,102 +1,257 @@
-/* ========== MEDIA QUERIES SIMPLES E EFICIENTES ========== */
-
-/* Telas até 768px (tablets e celulares grandes) */
 @media (max-width: 768px) {
-  .ul-menu {
-      flex-direction: column;
-      gap: 20px;
-      font-size: 18px;
-      align-items: center;
-  }
+    /* MENU */
+    #btn-hamburguer {
+        display: block;
+        
+    }
+    .ul-menu {
+        display: none;
+    }
+    .ul-menu.active {
+        display: flex;
+    }
+    .ul-menu {
+        gap: 40px;
+        font-size: 16px;
+        display: none;
+    }
+    .icon-sacola {
+        height: 32px;
+        width: 32px;
+        top: 20px;
+        right: 20px;
+    }
+    #contador-sacola {
+        top: 18px;
+        right: 50px;
+        width: 16px;
+        height: 16px;
+        font-size: 10px;
+    }
 
-  .container-menu {
-      flex-direction: column;
-      height: auto;
-      padding: 20px 0;
-  }
+    /* PAGINA PRINCIPAL */
+    .pagina-principal {
+        height: 400px;
+        background-position: center;
+    }
+    .titulo {
+        font-size: 40px;
+    }
+    .sub-titulo {
+        font-size: 24px;
+        margin-top: 20px;
+    }
+    .terceiro-titulo {
+        font-size: 18px;
+        margin-top: 15px;
+    }
+    .btn-pagina-principal {
+        width: 200px;
+        height: 50px;
+        font-size: 18px;
+        margin-top: 40px;
+    }
 
-  .icon-sacola {
-      position: static;
-      margin-top: 10px;
-  }
+    /* ESCOLHER A TECH */
+    .titulo-escolher-tech {
+        font-size: 30px;
+        padding: 10px 0;
+    }
+    .container-cards-grid {
+        gap: 20px;
+    }
+    .container-cards {
+        width: 160px;
+        height: 160px;
+        font-size: 16px;
+    }
+    .icons-cards {
+        width: 50px;
+        height: 50px;
+    }
 
-  .titulo {
-      font-size: 50px;
-  }
+    /* PRODUTOS EM DESTAQUE */
+    .titulo-produtos-destaque {
+        font-size: 30px;
+        margin: 40px 0;
+    }
+    .container-produtos-grid {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        padding: 20px 0;
+    }
+    .container-produtos {
+        width: 90%;
+        height: auto;
+    }
+    .img-produtos {
+        width: 150px;
+        height: 150px;
+    }
+    .p-produtos,
+    .preco-produtos {
+        font-size: 16px;
+    }
+    .btn-produtos {
+        width: 180px;
+        font-size: 16px;
+        margin-top: 20px;
+    }
 
-  .sub-titulo {
-      font-size: 28px;
-  }
+    /* SECAO EMAIL */
+    .email {
+        height: auto;
+        padding: 40px 20px;
+    }
+    .h2-email {
+        font-size: 30px;
+        text-align: center;
+    }
+    .p-email {
+        font-size: 18px;
+        text-align: center;
+    }
+    .input-email {
+        width: 90%;
+        margin-top: 20px;
+    }
+    .btn-email {
+        width: 200px;
+        font-size: 18px;
+        margin-top: 30px;
+    }
 
-  .container-cards-grid {
-      gap: 20px;
-  }
-
-  .container-produtos-grid {
-      flex-wrap: wrap;
-      height: auto;
-      padding: 20px;
-      gap: 40px;
-      width: 90%;
-  }
-
-  .container-produtos {
-      width: 100%;
-      max-width: 300px;
-  }
-
-  .input-email {
-      width: 90%;
-  }
-
-  .btn-email,
-  .btn-pagina-principal {
-      width: 90%;
-      font-size: 20px;
-  }
+    /* FOOTER */
+    .footer-footer {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+    .footer-colunas {
+        text-align: center;
+        margin: 20px 0;
+    }
 }
 
-/* Telas até 480px (celulares) */
 @media (max-width: 480px) {
-  .titulo {
-      font-size: 36px;
-  }
+    /* MENU */
+    .ul-menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        font-size: 14px;
+    }
+    .icon-sacola {
+        height: 28px;
+        width: 28px;
+        top: 15px;
+        right: 15px;
+    }
+    #contador-sacola {
+        top: 13px;
+        right: 40px;
+        width: 14px;
+        height: 14px;
+        font-size: 9px;
+    }
 
-  .sub-titulo,
-  .terceiro-titulo {
-      font-size: 20px;
-  }
+    /* PAGINA PRINCIPAL */
+    .pagina-principal {
+        height: 300px;
+    }
+    .titulo {
+        font-size: 30px;
+    }
+    .sub-titulo {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+    .terceiro-titulo {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .btn-pagina-principal {
+        width: 180px;
+        height: 45px;
+        font-size: 16px;
+        margin-top: 30px;
+    }
 
-  .ul-menu {
-      font-size: 16px;
-  }
+    /* ESCOLHER A TECH */
+    .titulo-escolher-tech {
+        font-size: 24px;
+        padding: 5px 0;
+    }
+    .container-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    .container-cards {
+        width: 130px;
+        height: 130px;
+        font-size: 14px;
+    }
+    .icons-cards {
+        width: 40px;
+        height: 40px;
+    }
 
-  .container-cards {
-      width: 90%;
-      font-size: 16px;
-  }
+    /* PRODUTOS EM DESTAQUE */
+    .titulo-produtos-destaque {
+        font-size: 26px;
+        margin: 30px 0;
+    }
+    .container-produtos {
+        width: 100%;
+    }
+    .img-produtos {
+        width: 120px;
+        height: 120px;
+    }
+    .p-produtos,
+    .preco-produtos {
+        font-size: 14px;
+    }
+    .btn-produtos {
+        width: 160px;
+        font-size: 14px;
+        margin-top: 15px;
+    }
 
-  .container-produtos {
-      padding: 20px;
-      font-size: 16px;
-  }
+    /* SECAO EMAIL */
+    .h2-email {
+        font-size: 26px;
+    }
+    .p-email {
+        font-size: 16px;
+    }
+    .input-email {
+        width: 100%;
+    }
+    .btn-email {
+        width: 180px;
+        font-size: 16px;
+        margin-top: 25px;
+    }
 
-  .img-produtos {
-      width: 100%;
-      height: auto;
-  }
+    /* FOOTER */
+    .footer-footer {
+        gap: 20px;
+    }
+    .footer-colunas {
+        font-size: 14px;
+    }
 
-  .footer-colunas {
-      text-align: center;
-  }
-
-  .h2-email {
-      font-size: 36px;
-      text-align: center;
-  }
-
-  .p-email {
-      font-size: 20px;
-      text-align: center;
-  }
+    /* MODAL */
+    #conteudo-modal {
+        width: 95%;
+        font-size: 14px;
+    }
+    #btn-modal {
+        width: 90%;
+        left: 5%;
+        top: 85%;
+        font-size: 14px;
+    }
 }

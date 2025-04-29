@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="estilos/variaveis.css">
     <link rel="stylesheet" href="estilos/style-menu.css">
     <link rel="stylesheet" href="estilos/media-querie.css">
+    <link rel="stylesheet" href="estilos/modo-noturno.css">
+    <link rel="stylesheet" href="estilos/modal.css">
 
 
     <title>TecHub</title>
@@ -13,6 +15,9 @@
 <body>
     <!--MENU-->
     <div class="container-menu">
+        <button id="btn-hamburguer" aria-label="Abrir Menu">
+            &#9776;
+        </button>
         <nav class="menu">
             <ul class="ul-menu">
                 <li><a href="#titulo-produtos-destaque">Produtos</a></li>
@@ -20,7 +25,14 @@
                 <li><a href="#titulo-produtos-destaque">Ofertas</a></li>
             </ul>
             <img src="icons/sacola-de-compras.svg" alt="Icone sacola de compras" class="icon-sacola">
+            <span id="contador-sacola">0</span>
         </nav>
+    </div>
+    
+    <div id="modal-sacola">
+        <div id="conteudo-modal">
+        </div>
+        <button id="btn-modal">Finalizar Compra</button>
     </div>
         <!--PAGINA PRINCIPAL-->
         <section class="pagina-principal">
@@ -55,7 +67,6 @@
             </div>
             <h2 class="titulo-produtos-destaque" id="titulo-produtos-destaque">Produtos em destaque</h2>
             <div class="container-produtos-grid">
-                
                 <div class="container-produtos">
                     <img src="imagens/ps5-pro--.webp" alt="ps5-pro--" class="img-produtos">
                     <p class="p-produtos">Playstation 5 PRO, 2TB SDD, 
@@ -138,7 +149,7 @@
          </div>
          </footer>
   
-          
+          <script src="scripts/modalsacolacompras.js"></script>
 
 </body>
 </html>

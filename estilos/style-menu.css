@@ -1,3 +1,12 @@
+/*MENU*/
+#btn-hamburguer {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: var(--Cor-Texto);
+}
 .container-menu {
     display: flex;
     background-color: var(--Cor-Fundo);
@@ -33,6 +42,24 @@ a {
     width: 48px;
     cursor: pointer;
 }
+#contador-sacola {
+    position: absolute;
+    visibility: hidden;
+    top: 29px;  
+    right: 69px; 
+    background: red; 
+    color: white;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px; 
+}
+#modal-sacola {
+    display: none;
+}
+/*PAGINA PRINCIPAL*/
 .pagina-principal {
     background-image: url(../imagens/fundo-techhub1.png);
     background-repeat: no-repeat;
@@ -41,6 +68,7 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    
 
     display: flex;
     justify-content: center;  
@@ -52,6 +80,7 @@ a {
     flex-direction: column;
     align-items: center;
     padding-top: 40px;
+    
 }
 .titulo {
     font-size: 80px;
@@ -91,6 +120,7 @@ a {
     font-family: var(--font-Principal);
     box-shadow: 0 0 10px var(--Cor-Bordas), 0 0 20px var(--Cor-Bordas), 0 0 40px var(--Cor-Bordas);
 }
+/*ESCOLHER A TECH*/
 .escolher-tech {
     background-color: var(--Cor-Fundo);
 }
@@ -123,6 +153,7 @@ a {
     font-size: 18px;
     margin-top: 50px;
 }
+/*PRODUTOS EM DESTAQUE*/
 .titulo-produtos-destaque {
     font-family: var(--font-Principal);
     color: var(--Cor-Texto);
@@ -198,6 +229,7 @@ a {
     font-family: var(--font-Principal);
     box-shadow: 0 0 10px var(--Cor-Bordas), 0 0 20px var(--Cor-Bordas), 0 0 40px var(--Cor-Bordas);
 }
+/*SECAO E-MAIL*/
 .email {
     height: 783px;
     display: flex;
@@ -259,6 +291,7 @@ input::placeholder {
     font-family: var(--font-Principal);
     box-shadow: 0 0 10px var(--Cor-Bordas), 0 0 20px var(--Cor-Bordas), 0 0 40px var(--Cor-Bordas);
 }
+/*FOOTER*/
 footer {
     background-color: black;
     padding: 20px;
@@ -270,6 +303,8 @@ footer {
     flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 20px;
+    align-items: center;
+    margin-left: 186px;
 }
 .footer-colunas {
     flex: 1 1 20%;
